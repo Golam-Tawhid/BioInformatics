@@ -1,12 +1,4 @@
-"""
-Solution of CS-centric task
-"""
-
-
 def dna_sequence(arr):
-    """
-    this function do the process of DNA sequence assembly.
-    """
     final = arr[0]
     for i in range(1, len(arr)):
         match = find_match(final, arr[i])
@@ -15,9 +7,6 @@ def dna_sequence(arr):
 
 
 def find_match(str1, str2):
-    """
-    this function find the match of two dna sequence.
-    """
     max_len = min(len(str1), len(str2))
     for i in range(max_len, 0, -1):
         if str1[-i:] == str2[:i]:
