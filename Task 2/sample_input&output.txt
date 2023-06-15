@@ -1,0 +1,7 @@
+Sample input:
+ATGAG
+AGGAA
+AATTT
+
+Sample output:
+ATGAGGAATTT
